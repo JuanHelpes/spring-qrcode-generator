@@ -22,10 +22,11 @@ O QR Code é gerado usando a biblioteca **Google ZXing** e a API retorna o link 
 
 Crie um arquivo `.env` na raiz do projeto:
 
-````env
+```env
 SUPABASE_URL=your_supabase_url
 SUPABASE_API_KEY=your_supabase_api_key
 SUPABASE_BUCKET=qrCode-generator
+```
 
 ## ▶️ Rodando a aplicação
 
@@ -37,13 +38,14 @@ mvn spring-boot:run
 1. Build da imagem:
    ```bash
    docker build -t qrcode-generator:X.X .
-````
+   ```
+
+`````
 
 2. Run the container:
-   ```bash
+   ````bash
    docker run --env-file .env -p 8080:8080 qrcode-generator:X.X
-   ```
-   > Remember to replace the .env file path to the path of your environment file that you created.
+`````
 
 ## 📡 API
 
