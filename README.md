@@ -36,16 +36,15 @@ mvn spring-boot:run
 #### Docker Deployment
 
 1. Build da imagem:
+
    ```bash
    docker build -t qrcode-generator:X.X .
    ```
 
-`````
-
 2. Run the container:
-   ````bash
+   ```bash
    docker run --env-file .env -p 8080:8080 qrcode-generator:X.X
-`````
+   ```
 
 ## 📡 API
 
